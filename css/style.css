@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(201, 109, 179);
+    position: sticky;
+    top: 0px;
+}
+
+.image-logo{
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.list-nav{
+    font-size: 1.3rem;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.list-nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;    
+}
+
+.list-nav ul li{
+    margin: 0px 10px;
+}
+
+.list-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.image-nav{
+    background-image: url("../img/imagen-principal.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin-bottom:50px;
+}
+
+footer{
+    color: black;
+    font-size: 1.3rem;
+    padding: 30px;
+    border-top: 1px solid black;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+/*index*/
+.video-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.video-article{
+    margin: 0px 30px;
+}
+
+/*galeria*/
+ .image-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.image-container img{
+    width: 300px ;
+    height: 300px;
+} 
+
+/*biografia*/
+.biography-container{
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    font-weight: 300px;
+}
+
+/*contacto*/
+.contact-container{
+    margin: 50px;
+}
+
+/*discografia*/
+.discography-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.discography-container div img{
+    width: 400px;
+    height: 400px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+
+    .video-container{
+        flex-direction: column;
+    }
+
+    .image-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .discography-container{
+        grid-template-columns: auto;
+    }
+
+    h1{
+        font-size: 1.3rem;
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .video-container{
+        flex-direction: column;
+    }
+
+    .image-container{
+        grid-template-columns: auto;
+    }
+
+    .discography-container{
+        grid-template-columns: auto;
+    }
+}
