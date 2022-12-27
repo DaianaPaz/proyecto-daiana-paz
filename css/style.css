@@ -59,7 +59,6 @@ header {
 }
 
 footer{
-    
     color: black;
     font-size: 1.3rem;
     padding: 30px;
@@ -68,7 +67,7 @@ footer{
 
 /* footer ul{
     text-align: center;
-}*/
+} */
 
 footer ul{
     display: flex;
@@ -81,7 +80,7 @@ footer ul li{
 }
 
 .bi{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /*index*/
