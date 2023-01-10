@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-principal;
+    position: sticky;
+    top: 0px;
+    .image-logo{
+        width: 150px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px 10px;
+    }
+    .list-nav{
+        font-size: 1.3rem;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        ul{
+            list-style-type: none;
+            display: flex;
+            align-items: flex-end; 
+            li{
+                margin: 0px 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
