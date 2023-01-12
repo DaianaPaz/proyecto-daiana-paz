@@ -65,10 +65,6 @@ footer{
     border-top: 1px solid black;
 }
 
-/* footer ul{
-    text-align: center;
-} */
-
 footer ul{
     display: flex;
     justify-content: center;
