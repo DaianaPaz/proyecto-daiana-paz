@@ -1,6 +1,5 @@
 header{
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between);
     background-color: $color-principal;
     position: sticky;
     top: 0px;

@@ -11,8 +11,7 @@
 }
 
 .video-container{
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(flex, space-evenly);
     .video-article{
         margin: 0px 30px;
     }

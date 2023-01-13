@@ -5,3 +5,8 @@ grey,
 black,
 white;
 
+
+@mixin flex($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
